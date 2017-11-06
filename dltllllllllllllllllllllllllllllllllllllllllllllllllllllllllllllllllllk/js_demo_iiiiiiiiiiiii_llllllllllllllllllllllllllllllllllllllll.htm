@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(m.runoob.com)</title> 
+</head>
+<body>
+
+
+
+<h1  style=color:#888888>随机链接示例菜鸟教程</>
+
+
+<p id="demo5">随机链接示例demo</p>
+
+
+<button    style="font-size:35px;color:#FF0000"    onclick="myFunction5()">随机链接点我</button>
+​
+
+<script>
+
+ function myFunction5(){
+
+	var x="",r;
+
+ r=Math.random();
+
+
+ x=document.getElementById("demo5")
+
+if (r>0.5){
+
+	x.innerHTML="<a href='https://m.runoob.com/'>访问菜鸟教程</a>";
+}
+else{
+	x.innerHTML="<a href='https://weidian.com/?userid=837338208&wfr=c&ifr=shopdetail'>访问我的微店</a>";
+
+}
+
+}
+
+
+</script>
+
+</body>
+</html>

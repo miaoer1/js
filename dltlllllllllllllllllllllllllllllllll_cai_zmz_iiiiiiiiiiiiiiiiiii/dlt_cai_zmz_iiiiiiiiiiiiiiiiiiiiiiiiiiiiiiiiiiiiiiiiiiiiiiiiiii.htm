@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+
+
+<h1 style=color:#FFFFFF>大乐透随机猜中没版</>
+
+
+
+
+<p style=color:#FF0000>点击下面的按钮来显示今天是周几：</p>
+
+<button   style="font-size:35px;color:
+
+#FF0000"    onclick="myFunction()">显示日期点我</button>
+
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x;
+	var d=new Date().getDay();
+	switch (d){
+  		case 0:x="今天是星期日";
+    	break;
+ 		case 1:x="今天是星期一";
+        break;
+  		case 2:x="今天是星期二";
+        break;
+        case 3:x="今天是星期三";
+   	 	break;
+  		case 4:x="今天是星期四";
+    	break;
+  		case 5:x="今天是星期五";
+        break;
+  		case 6:x="今天是星期六";
+    	break;
+ 	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+
+
+
+
+
+<button    style="font-size:35px;color:#FF0000"    onclick="myFunction5()">前区点我选号</button>
+
+​
+<p id="demo5">前区随机开始</p>
+
+<script>
+
+function myFunction5(){
+
+
+	var x="",r;
+
+
+
+ r=Math.random();
+
+
+x=document.getElementById("demo5")
+if (r>0.5){
+	x.innerHTML=Math.random()*35+1;
+}
+else{
+	x.innerHTML=Math.floor(Math.random()*35+1);
+}
+
+}
+</script>
+
+
+<p  style=color:#FF0000>大乐透随机猜。中。没。中。</p>
+<button    style="font-size:35px;color:#FF0000"    onclick="myFunction5x()">前区点我猜一猜</button>
+
+​
+<p id="demo5x">随机猜猜前区。中。没。中</p>
+<script>
+
+function myFunction5x(){
+
+	var x="",r;
+
+ r=Math.random();
+x=document.getElementById("demo5x")
+if (r>0.5){
+    x.innerHTML="<...中了";
+}
+else{
+    x.innerHTML="<...没中";
+}
+
+}
+
+
+</script>
+
+
+
+
+
+
+<button    style="font-size:35px;color:#FF0000"    onclick="myFunction2()">后区点我选号</button>
+
+​
+<p id="demo2">后区随机开始</p>
+
+<script>
+
+function myFunction2(){
+
+
+	var x="",r;
+
+
+
+ r=Math.random();
+
+
+x=document.getElementById("demo2")
+if (r>0.5){
+	x.innerHTML=Math.random()*12+1;
+}
+else{
+	x.innerHTML=Math.floor(Math.random()*12+1);
+}
+
+}
+
+</script>
+
+
+<p  style=color:#FF0000>大乐透随机猜。中。没。中。</p>
+<button    style="font-size:35px;color:#FF0000"    onclick="myFunction2x()">后区点我猜一猜</button>
+
+​
+<p id="demo2x">随机猜猜后区。中。没。中</p>
+<script>
+
+function myFunction2x(){
+
+	var x="",r;
+
+ r=Math.random();
+x=document.getElementById("demo2x")
+if (r>0.5){
+    x.innerHTML="<...中了";
+}
+else{
+    x.innerHTML="<...没中";
+}
+
+}
+
+
+</script>
+
+
+
+
+​
+</body>
+</html>
+
+
+   
+
+
+
+
+
+
+
